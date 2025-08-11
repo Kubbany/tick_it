@@ -1,0 +1,7 @@
+.splash-container {
+  background-color: #e8a870;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
