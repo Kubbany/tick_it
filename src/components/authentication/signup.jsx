@@ -1,5 +1,6 @@
 import  { useState } from "react";
 import Logo from "../logo/logo.js";
+import "./signup.css";
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
@@ -8,7 +9,7 @@ export default function SignUp(){
     const [showPassword, setShowPassword] = useState(false);
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
     return(
-        <div className="register-container">
+        <div className="signup-container">
 
             <div className="logo">
                 <Logo size={120} />
@@ -26,7 +27,7 @@ export default function SignUp(){
                         <input 
                         type={showPassword ? "text" : "password"}
                         placeholder="Password"
-                        className="login-input" />
+                        className="signup-input" />
                         <span  
                         className="eye-icon"
                         onClick={() => setShowPassword(!showPassword)}>
@@ -40,7 +41,7 @@ export default function SignUp(){
                         <input 
                         type={showConfirmPassword ? "text" : "password"}
                         placeholder="Confirm Password"
-                        className="login-input" />
+                        className="signup-input" />
                         <span  
                         className="eye-icon"
                         onClick={() => setShowConfirmPassword(!showConfirmPassword)}>
